@@ -7,16 +7,16 @@ import PortfolioCard from "@/components/portfolio-card"
 import TestimonialCard from "@/components/testimonial-card"
 import WhatsAppButton from "@/components/whatsapp-button"
 import ThemeToggle from "@/components/theme-toggle"
-
+import Image from "next/image"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Zap className="h-6 w-6 text-emerald-500" />
-            <span className="text-xl font-bold">ArnabDev</span>
+          <div className="flex items-center ">
+            <Image src="/header.png" alt="Logo" width={200} height={40} className="rounded-full" />
+            <span className="text-xl text-[#00000000] font-bold">NextLaunch Studio</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#services" className="text-sm font-medium hover:text-emerald-500 transition-colors">
@@ -359,7 +359,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Zap className="h-6 w-6 text-emerald-400" />
-                <span className="text-xl font-bold">ArnabDev</span>
+                <span className="text-xl font-bold">NextLaunch Studio</span>
               </div>
               <p className="max-w-xs text-slate-300">
                 Creating blazing fast, SEO-friendly, and cost-effective websites for businesses of all sizes.
@@ -452,7 +452,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm text-slate-300">© {new Date().getFullYear()} ArnabDev. All rights reserved.</p>
+            <p className="text-sm text-slate-300">© {new Date().getFullYear()} NextLaunch Studio. All rights reserved.</p>
           </div>
         </div>
       </footer>

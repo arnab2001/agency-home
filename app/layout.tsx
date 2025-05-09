@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'ArnabDev - Web Development Agency in Bagnan',
+  title: 'NextLaunch Studio - Web Development Agency in Bagnan',
   description: 'Professional web development services in Bagnan. Expert web developers creating modern, SEO-friendly websites for local businesses.',
   keywords: 'Bagnan web development, web development agency Bagnan, website development Bagnan',
   authors: [{ name: 'Arnab Chatterjee' }],
@@ -28,7 +28,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "ArnabDev",
+              "name": "NextLaunch Studio",
               "description": "Web Development Agency in Bagnan",
               "address": {
                 "@type": "PostalAddress",
